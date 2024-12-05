@@ -10,10 +10,11 @@
 
 10.times do
     character = Character.create(
-        name: Faker::Name.name,
-        location: Faker::Address.city,
-        house: Faker::Lorem.word
+        name: Faker::Movies::HarryPotter.character,
+        location: Faker::Movies::HarryPotter.location,
+        house: Faker::Movies::HarryPotter.house
     )    
 end
 
 puts "Personajes creados #{Character.count}"
+
